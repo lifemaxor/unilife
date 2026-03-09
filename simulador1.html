@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unilife Simuladores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&family=Bangers&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="simulador1.css" />
+  <link rel="icon" href="logo.png" type="logo.png">
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="uaemex.html" class="nav-brand">
+        <img src="uaemex.png" alt="UAEMEX" class="brand-logo"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div class="brand-fallback" style="display:none">
+          <i class="fas fa-graduation-cap"></i><span>UAEMEX</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="uaemex.html"><i class="fas fa-house"></i><span>Inicio</span></a></li>
+        <li><a href="guias.html"><i class="fas fa-book-open"></i><span>Guías</span></a></li>
+        <li><a href="https://chat.whatsapp.com/If3m9CuCqzF0B7eYFraUnC" class="nav-cta"><i
+              class="fab fa-whatsapp"></i><span>Únete Gratis</span></a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="uaemex.html"><i class="fas fa-house"></i> Inicio</a>
+      <a href="guias.html"><i class="fas fa-book-open"></i> Guías</a>
+      <a href="#" class="mob-cta"><i class="fab fa-whatsapp"></i> Únete Gratis</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+     PANTALLA 1: BIENVENIDA
+══════════════════════════════════════ -->
+  <section class="screen" id="screenWelcome">
+    <div class="welcome-bg">
+      <div class="wb-blob wb-b1"></div>
+      <div class="wb-blob wb-b2"></div>
+      <div class="wb-blob wb-b3"></div>
+      <div class="wb-grid"></div>
+    </div>
+    <div class="comic-pin cp-1"><span>¡NIVEL</span><span>PRO!</span></div>
+    <div class="comic-pin cp-2"><span>40</span><span>PREGS</span></div>
+    <div class="comic-star cs-1"><span>GO!</span></div>
+
+    <div class="welcome-content">
+      <div class="wc-eyebrow">
+        <span class="wc-dot"></span>Simulador #1 · EXANI-II 2025 · UAEMEX<span class="wc-dot"></span>
+      </div>
+      <h1 class="wc-title">
+        <span class="wct-top">BIENVENIDO AL</span>
+        <span class="wct-main">PRIMER<br>SIMULADOR</span>
+        <span class="wct-sub">de Matemáticas</span>
+      </h1>
+
+      <div class="wc-info-grid">
+        <div class="wc-info-card">
+          <i class="fas fa-list-ol"></i><strong>40</strong><span>Preguntas</span>
+        </div>
+        <div class="wc-info-card">
+          <i class="fas fa-stopwatch"></i><strong>Cronómetro</strong><span>A tu ritmo</span>
+        </div>
+        <div class="wc-info-card">
+          <i class="fas fa-layer-group"></i><strong>4 Temas</strong><span>Ver abajo</span>
+        </div>
+        <div class="wc-info-card">
+          <i class="fas fa-star"></i><strong>Gratis</strong><span>Sin costo</span>
+        </div>
+      </div>
+
+      <div class="wc-topics">
+        <div class="topic-pill"><i class="fas fa-square-root-variable"></i> Álgebra</div>
+        <div class="topic-pill"><i class="fas fa-percent"></i> Razones y Proporciones</div>
+        <div class="topic-pill"><i class="fas fa-chart-bar"></i> Probabilidad y Estadística</div>
+        <div class="topic-pill"><i class="fas fa-infinity"></i> Series Numéricas</div>
+      </div>
+
+      <div class="wc-notice">
+        <i class="fas fa-circle-info"></i>
+        <p>Nivel <strong>examen real</strong>. Al terminar recibes tus resultados con explicación detallada de cada
+          respuesta. Hay un cronómetro para medir tu tiempo.</p>
+      </div>
+
+      <button class="btn-start" onclick="startSimulator()">
+        <span class="btn-start-inner">
+          <i class="fas fa-rocket"></i>
+          <span>Empezar Simulador</span>
+          <i class="fas fa-arrow-right btn-arrow"></i>
+        </span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     PANTALLA 2: QUIZ
+══════════════════════════════════════ -->
+  <section class="screen hidden" id="screenQuiz">
+
+    <!-- Barra sticky del quiz -->
+    <div class="quiz-header" id="quizHeader">
+      <div class="qh-inner">
+        <div class="qh-left">
+          <div class="qh-prog-label">Pregunta <span id="qCurrent">1</span> de 40</div>
+          <div class="qh-bar">
+            <div class="qh-bar-fill" id="qBarFill" style="width:2.5%"></div>
+          </div>
+        </div>
+        <div class="qh-center">
+          <span class="qh-topic-badge" id="qTopicBadge">Álgebra</span>
+        </div>
+        <div class="qh-right">
+          <div class="qh-timer" id="qhTimer">
+            <i class="fas fa-stopwatch"></i>
+            <span id="timerDisplay">00:00:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Área de la pregunta -->
+    <div class="quiz-body">
+      <div class="question-card" id="questionCard">
+        <div class="q-num-label" id="qNumLabel">01</div>
+        <div class="q-text" id="qText"></div>
+        <div class="q-table-wrap hidden" id="qTableWrap"></div>
+        <div class="q-options" id="qOptions"></div>
+        <div class="q-footer">
+          <button class="btn-next hidden" id="btnNext" onclick="nextQuestion()">
+            <i class="fas fa-arrow-right"></i>
+            <span id="btnNextLabel">Siguiente pregunta</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+     PANTALLA 3: RESULTADOS
+══════════════════════════════════════ -->
+  <section class="screen hidden" id="screenResults">
+    <div class="results-bg">
+      <div class="rb-b1"></div>
+      <div class="rb-b2"></div>
+    </div>
+    <div class="results-content">
+
+      <!-- Hero de puntaje -->
+      <div class="score-hero" id="scoreHero">
+        <div class="sh-ring-wrap">
+          <svg class="sh-svg" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="8" />
+            <circle cx="60" cy="60" r="52" fill="none" stroke="var(--green-light)" stroke-width="8"
+              stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="326.7" id="scoreCircle"
+              transform="rotate(-90 60 60)" />
+          </svg>
+          <div class="sh-inner-text">
+            <span class="sh-num" id="shNum">0</span>
+            <span class="sh-den">/40</span>
+          </div>
+        </div>
+        <div class="sh-info">
+          <div class="sh-badge" id="shBadge">—</div>
+          <h2 class="sh-title" id="shTitle">Tus Resultados</h2>
+          <p class="sh-desc" id="shDesc"></p>
+          <div class="sh-time-row">
+            <i class="fas fa-stopwatch"></i> Tiempo total: <strong id="shTime">—</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats por tema -->
+      <div class="topic-stats" id="topicStats"></div>
+
+      <!-- Botones -->
+      <div class="result-btns">
+        <button class="rb-dl" onclick="downloadResults()"><i class="fas fa-download"></i> Descargar Resultados</button>
+        <button class="rb-retry" onclick="retrySimulator()"><i class="fas fa-rotate-right"></i> Intentar de
+          Nuevo</button>
+        <a href="uaemex.html" class="rb-home"><i class="fas fa-house"></i> Volver al Inicio</a>
+      </div>
+
+      <!-- Revisión detallada -->
+      <div class="review-section">
+        <h3 class="review-title"><i class="fas fa-clipboard-list"></i> Revisión Detallada</h3>
+        <div id="reviewList"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ MODAL TRAMPA ══ -->
+  <div class="cheat-modal hidden" id="cheatModal">
+    <div class="cm-box">
+      <div class="cm-icon"><i class="fas fa-triangle-exclamation"></i></div>
+      <h3>¡Oye! ¿A dónde vas? 👀</h3>
+      <p>Detectamos que cambiaste de ventana durante el simulador.<br>
+        <strong>En el examen real no puedes salir.</strong><br>Practica con la misma disciplina.
+      </p>
+      <p class="cm-count">El simulador continúa en <strong id="cmCount">3</strong>...</p>
+      <button class="cm-btn" onclick="dismissCheat()"><i class="fas fa-check"></i> Entendido, continuar</button>
+    </div>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="fb-logo-wrap">
+          <img src="uaemex.png" alt="UAEMEX" class="fb-logo-img"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+          <div class="fb-fallback" style="display:none">
+            <i class="fas fa-graduation-cap"></i><span>UAEMEX</span>
+          </div>
+        </div>
+        <p class="fb-desc">Simuladores y recursos académicos gratuitos para el EXANI-II. Sin costo, sin registro, sin
+          límites.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/share/g/1DVCnNQWp9/" class="fs-fb"><i
+              class="fab fa-facebook-f"></i><span>Facebook</span></a>
+          <a href="https://chat.whatsapp.com/If3m9CuCqzF0B7eYFraUnC" class="fs-wa"><i
+              class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4><i class="fas fa-compass"></i> Navegación</h4>
+        <ul>
+          <li><a href="uaemex.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+          <li><a href="guias.html"><i class="fas fa-chevron-right"></i> Guías</a></li>
+          <li><a href="tips.html"><i class="fas fa-chevron-right"></i> Tips</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Comunidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4><i class="fas fa-flask"></i> Simuladores</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Simulador 1 — Matemáticas</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Más próximamente…</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 <strong>UAEMEX Recursos Académicos</strong> · Hecho con <i class="fas fa-heart"></i> para estudiantes
+      </p>
+      <p class="fb-tag"><i class="fas fa-lock"></i> Derechos Reservados 2026</p>
+    </div>
+  </footer>
+
+  <script src="simulador1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unilife – UAMEX</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,800&family=Bangers&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="logo.png" type="logo.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════
+         NAVBAR
+    ══════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <img src="uaemex.png" alt="Logo UAEMEX" class="brand-logo-img">
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="simulador1.html" class="nav-link"><i class="fas fa-terminal"></i>Simuladores</a></li>
+                <li><a href="nosotros.html" class="nav-link"><i class="fas fa-users"></i>Nosotros</a></li>
+                <li><a href="guias.html" class="nav-link"><i class="fas fa-book-bookmark"></i>Guías</a></li>
+                <li><a href="tips.html" class="nav-link"><i class="fas fa-lightbulb"></i>Tips</a></li>
+                <li><a href="#whatsapp" class="nav-cta-btn"><i class="fab fa-whatsapp"></i>Únete gratis</a></li>
+            </ul>
+
+            <button class="burger" id="burgerBtn" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <div class="mob-menu" id="mobMenu">
+            <ul>
+                <li><a href="#simuladores" class="mob-link"><i class="fas fa-terminal"></i> Simuladores</a></li>
+                <li><a href="#nosotros" class="mob-link"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="#guias" class="mob-link"><i class="fas fa-book-bookmark"></i> Guías</a></li>
+                <li><a href="#tips" class="mob-link"><i class="fas fa-lightbulb"></i> Tips</a></li>
+                <li><a href="#whatsapp" class="mob-link mob-wha"><i class="fab fa-whatsapp"></i> Únete gratis</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════════════════
+         HERO
+    ══════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hbg-panel"></div>
+            <div class="hbg-dots"></div>
+            <div class="hbg-arc"></div>
+            <svg class="hbg-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,60 C240,110 480,10 720,60 C960,110 1200,10 1440,60 L1440,120 L0,120Z" />
+            </svg>
+        </div>
+
+        <div class="hero-container">
+
+            <!-- Lado izquierdo -->
+            <div class="hero-left">
+
+                <!-- Viñeta cómic -->
+                <div class="comic-balloon">
+                    <div class="cb-stars"><span>★</span><span>✦</span><span>★</span></div>
+                    <p class="cb-text">¡Para empezar!</p>
+                    <div class="cb-tail"></div>
+                </div>
+
+                <div class="hero-title-wrap">
+                    <h1 class="hero-h1">
+                        ¿Quieres<br>ingresar a la<br>
+                        <span class="h1-brand">UAEMEX<span class="h1-dot">?</span></span>
+                    </h1>
+                    <div class="h1-deco">
+                        <span class="h1-deco-line"></span>
+                        <span class="h1-deco-diamond"></span>
+                        <span class="h1-deco-line"></span>
+                    </div>
+                </div>
+
+                <div class="hero-glass-card">
+                    <div class="hgc-bar"></div>
+                    <p>No venimos a venderte cursos. Al contrario, queremos darte
+                        <strong>todo completamente gratis</strong> y apoyarte para que
+                        te prepares y llegues tranquilo a tu examen.
+                    </p>
+                </div>
+
+                <div class="hero-cta-row">
+                    <a href="#simuladores" class="cta-primary">
+                        <span class="cta-icon-wrap"><i class="fas fa-rocket"></i></span>
+                        <span class="cta-label">Ver Simuladores</span>
+                        <span class="cta-arrow"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#whatsapp" class="cta-ghost">
+                        <i class="fab fa-whatsapp"></i>
+                        Unirse al grupo
+                    </a>
+                </div>
+
+                <div class="hero-stats-row">
+                    <div class="hsr-item">
+                        <div class="hsr-num">100%</div>
+                        <div class="hsr-label">Gratuito</div>
+                    </div>
+                    <div class="hsr-sep"></div>
+                    <div class="hsr-item">
+                        <div class="hsr-num">+10</div>
+                        <div class="hsr-label">Materias</div>
+                    </div>
+                    <div class="hsr-sep"></div>
+                    <div class="hsr-item">
+                        <div class="hsr-num">∞</div>
+                        <div class="hsr-label">Intentos</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Lado derecho – imagen hero (info4.png) -->
+            <div class="hero-right">
+                <div class="img-stage">
+                    <div class="img-stage-ring ring-1"></div>
+                    <div class="img-stage-ring ring-2"></div>
+                    <div class="img-frame">
+                        <div class="img-frame-corner tl"></div>
+                        <div class="img-frame-corner tr"></div>
+                        <div class="img-frame-corner bl"></div>
+                        <div class="img-frame-corner br"></div>
+                        <div class="img-mask">
+                            <img src="info4.png" alt="Prepárate para la UAMEX">
+                        </div>
+                    </div>
+                    <div class="float-chip chip-top">
+                        <i class="fas fa-star"></i> Acceso libre
+                    </div>
+                    <div class="float-chip chip-bot">
+                        <i class="fas fa-shield-halved"></i> Sin costos ocultos
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="scroll-hint">
+            <div class="sh-mouse">
+                <div class="sh-wheel"></div>
+            </div>
+            <span>Descubre más</span>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECCIÓN SIMULADORES
+    ══════════════════════════════════ -->
+    <section class="sim-section" id="simuladores">
+        <div class="sim-inner">
+
+            <div class="sim-header">
+                <div class="sim-label-pill">
+                    <i class="fas fa-graduation-cap"></i> Simuladores
+                </div>
+                <h2 class="sim-title">
+                    Preparación completa,<br>
+                    <span class="sim-title-accent">sin gastar un peso.</span>
+                </h2>
+                <div class="sim-lead-card">
+                    <i class="fas fa-quote-left sim-quote-icon"></i>
+                    <p>Hemos preparado simuladores que podrían ayudarte. Abarcan diferentes temas para que llegues listo
+                        a tu examen de admisión.</p>
+                </div>
+            </div>
+
+            <div class="temas-grid">
+                <div class="tc tc-math">
+                    <div class="tc-top">
+                        <div class="tc-num">01</div>
+                        <div class="tc-icon-box"><i class="fas fa-square-root-alt"></i></div>
+                    </div>
+                    <h3 class="tc-title">Matemáticas</h3>
+                    <ul class="tc-list">
+                        <li><i class="fas fa-circle-dot"></i> Álgebra</li>
+                        <li><i class="fas fa-circle-dot"></i> Pensamiento Matemático</li>
+                        <li><i class="fas fa-circle-dot"></i> Cálculo Diferencial e Integral</li>
+                        <li><i class="fas fa-circle-dot"></i> Geometría Analítica</li>
+                        <li><i class="fas fa-circle-dot"></i> Probabilidad y Estadística</li>
+                    </ul>
+                    <div class="tc-chip">5 materias cubiertas</div>
+                </div>
+
+                <div class="tc tc-lang">
+                    <div class="tc-top">
+                        <div class="tc-num">02</div>
+                        <div class="tc-icon-box"><i class="fas fa-feather-alt"></i></div>
+                    </div>
+                    <h3 class="tc-title">Lenguaje</h3>
+                    <ul class="tc-list">
+                        <li><i class="fas fa-circle-dot"></i> Comprensión Lectora</li>
+                        <li><i class="fas fa-circle-dot"></i> Redacción de Ensayos</li>
+                        <li><i class="fas fa-circle-dot"></i> Y más por venir...</li>
+                    </ul>
+                    <div class="tc-chip">Actualizado constantemente</div>
+                </div>
+
+                <div class="tc tc-disc">
+                    <div class="tc-top">
+                        <div class="tc-num">03</div>
+                        <div class="tc-icon-box"><i class="fas fa-atom"></i></div>
+                    </div>
+                    <h3 class="tc-title">Módulos Disciplinares</h3>
+                    <p class="tc-desc">Simuladores prácticos y sencillos para los módulos disciplinares específicos de
+                        la UAMEX.</p>
+                    <div class="tc-chip">Módulos UAMEX</div>
+                </div>
+            </div>
+
+            <div class="nota-card">
+                <div class="nota-glow"></div>
+                <div class="nota-left">
+                    <div class="nota-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                </div>
+                <div class="nota-mid">
+                    <h4>¿Necesitas un simulador específico?</h4>
+                    <p>Lo preparamos por ti de manera <strong>completamente gratuita</strong>. Mándanos mensaje en
+                        nuestro grupo de WhatsApp y en breve lo tendrás.</p>
+                </div>
+                <a href="#whatsapp" class="nota-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Pedir Simulador</span>
+                    <i class="fas fa-arrow-right nota-arrow"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECCIÓN NOSOTROS / INFO1 — Infografía preparación
+    ══════════════════════════════════ -->
+    <section class="split-section ss-nosotros" id="nosotros">
+        <div class="ss-inner">
+
+            <!-- Imagen izquierda -->
+            <div class="ss-img-col ss-img-left reveal-left">
+                <div class="ss-img-wrap">
+                    <div class="ss-img-deco-ring"></div>
+                    <div class="ss-img-frame">
+                        <img src="info1.png" alt="Infografía preparación UAMEX">
+                    </div>
+                    <!-- Viñeta cómic: explosión -->
+                    <div class="comic-burst burst-top-right">
+                        <span class="burst-shape"></span>
+                        <p class="burst-text">¡TÚ<br>PUEDES!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Texto derecho -->
+            <div class="ss-text-col reveal-right">
+                <div class="ss-label-pill">
+                    <i class="fas fa-map-location-dot"></i> ¿Dónde prepararte?
+                </div>
+                <h2 class="ss-title">
+                    Todo lo que necesitas<br>
+                    <span class="ss-accent">en un solo lugar.</span>
+                </h2>
+
+                <div class="ss-text-card">
+                    <p>Aquí encuentras <strong>guías, simuladores y recursos</strong> pensados específicamente para el
+                        examen de admisión de la UAMEX. Sin inscripciones, sin pagos, sin complicaciones.</p>
+                </div>
+
+                <ul class="ss-features">
+                    <li>
+                        <div class="ssf-icon"><i class="fas fa-check"></i></div>
+                        <div class="ssf-text">
+                            <strong>Simuladores por materia</strong>
+                            <span>Practica cada tema a tu ritmo</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ssf-icon"><i class="fas fa-check"></i></div>
+                        <div class="ssf-text">
+                            <strong>Guías de estudio gratuitas</strong>
+                            <span>Descárgalas cuando quieras</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ssf-icon"><i class="fas fa-check"></i></div>
+                        <div class="ssf-text">
+                            <strong>Comunidad de apoyo</strong>
+                            <span>No estudias solo, hay un grupo contigo</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="#simuladores" class="ss-btn">
+                    <i class="fas fa-rocket"></i> Comenzar ahora
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECCIÓN GUÍAS / INFO2
+    ══════════════════════════════════ -->
+    <section class="split-section ss-guias ss-alt" id="guias">
+        <div class="ss-inner">
+
+            <!-- Texto izquierdo (versión alt) -->
+            <div class="ss-text-col reveal-left">
+                <div class="ss-label-pill pill-gold">
+                    <i class="fas fa-file-lines"></i> Guías gratuitas
+                </div>
+                <h2 class="ss-title">
+                    Guías de examen<br>
+                    <span class="ss-accent-gold">listas para descargar.</span>
+                </h2>
+
+                <div class="ss-text-card card-gold">
+                    <p>Nada de buscar en internet durante horas. Tenemos <strong>Simuladores y Guias</strong>, tipo
+                        examen de admision, para que te familiarices y llegues confiado el día de tu prueba.</p>
+                </div>
+
+                <ul class="ss-features">
+                    <li>
+                        <div class="ssf-icon ssf-gold"><i class="fas fa-check"></i></div>
+                        <div class="ssf-text">
+                            <strong>Preguntas fuertes</strong>
+                            <span>Igual al que verás el día de tu examen</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ssf-icon ssf-gold"><i class="fas fa-check"></i></div>
+                        <div class="ssf-text">
+                            <strong>Con respuestas incluidas</strong>
+                            <span>Para que puedas autoevaluarte</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ssf-icon ssf-gold"><i class="fas fa-check"></i></div>
+                        <div class="ssf-text">
+                            <strong>100% gratis</strong>
+                            <span>Sin registro ni correo</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="guias.html" class="ss-btn btn-gold">
+                    <i class="fas fa-download"></i> Ver guías disponibles
+                </a>
+            </div>
+
+            <!-- Imagen derecha -->
+            <div class="ss-img-col ss-img-right reveal-right">
+                <div class="ss-img-wrap">
+                    <div class="ss-img-deco-ring ring-gold"></div>
+                    <div class="ss-img-frame frame-gold">
+                        <img src="info2.png" alt="Guías de examen UAMEX">
+                    </div>
+                    <!-- Viñeta cómic: pensamiento -->
+                    <div class="comic-think think-left">
+                        <div class="think-bubbles">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="think-balloon">
+                            <p>¡Esto<br>es fácil!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECCIÓN TIPS / INFO3 — 3 personas con tips
+    ══════════════════════════════════ -->
+    <section class="split-section ss-tips" id="tips">
+        <div class="ss-inner">
+
+            <!-- Imagen izquierda -->
+            <div class="ss-img-col ss-img-left reveal-left">
+                <div class="ss-img-wrap">
+                    <div class="ss-img-deco-ring ring-teal"></div>
+                    <div class="ss-img-frame frame-teal">
+                        <img src="info3.png" alt="Tips para tu examen UAMEX">
+                    </div>
+                    <!-- Viñeta cómic: signo de exclamación -->
+                    <div class="comic-shout shout-right">
+                        <div class="shout-box">
+                            <span>!</span>
+                        </div>
+                        <p class="shout-label">¡DATO<br>CLAVE!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Texto derecho -->
+            <div class="ss-text-col reveal-right">
+                <div class="ss-label-pill pill-teal">
+                    <i class="fas fa-users"></i> Consejos reales
+                </div>
+                <h2 class="ss-title">
+                    Tips directos <br>
+                    <span class="ss-accent-teal">antes de tu examen.</span>
+                </h2>
+
+                <div class="ss-text-card card-teal">
+                    <p>Reunimos los <strong>mejores consejos y estrategias</strong> para que aproveches cada minuto de
+                        estudio. Desde cómo distribuir tu tiempo hasta los temas más frecuentes del examen.</p>
+                </div>
+
+                <div class="tips-grid">
+                    <div class="tip-item">
+                        <div class="tip-num">01</div>
+                        <p>Estudia por bloques de <strong>25 minutos</strong> con descansos cortos.</p>
+                    </div>
+                    <div class="tip-item">
+                        <div class="tip-num">02</div>
+                        <p>Practica con simuladores <strong>en condiciones reales</strong> de tiempo.</p>
+                    </div>
+                    <div class="tip-item">
+                        <div class="tip-num">03</div>
+                        <p>No te confies al último, <strong> entrena y preparate</strong>.</p>
+                    </div>
+                    <div class="tip-item">
+                        <div class="tip-num">04</div>
+                        <p>Únete al grupo de WhatsApp y <strong>pregunta sin pena</strong>.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         SECCIÓN WHATSAPP / INFO5 (penúltima)
+    ══════════════════════════════════ -->
+    <section class="wha-section" id="whatsapp">
+        <div class="wha-bg">
+            <div class="wha-bg-shape-1"></div>
+            <div class="wha-bg-shape-2"></div>
+            <div class="wha-bg-dots"></div>
+        </div>
+
+        <div class="wha-inner">
+
+            <!-- Texto -->
+            <div class="wha-text reveal-left">
+                <!-- Viñeta cómic: señalando -->
+                <div class="comic-pointer">
+                    <div class="pointer-balloon">
+                        <p class="pointer-text">¡GRATIS!</p>
+                        <div class="pointer-tail"></div>
+                    </div>
+                </div>
+
+                <div class="wha-label-pill">
+                    <i class="fab fa-whatsapp"></i> Comunidad
+                </div>
+
+                <h2 class="wha-title">
+                    Únete a nuestra<br>
+                    <span class="wha-accent">comunidad gratuita.</span>
+                </h2>
+
+                <div class="wha-text-card">
+                    <p>Muchos estudiantes preparándose como tú juntos. Resuelve dudas, comparte recursos y llega
+                        acompañado al examen. <strong>Sin costo, sin condiciones.</strong></p>
+                </div>
+
+                <ul class="wha-benefits">
+                    <li><i class="fas fa-circle-check"></i> Respuestas en minutos</li>
+                    <li><i class="fas fa-circle-check"></i> Simuladores exclusivos del grupo</li>
+                    <li><i class="fas fa-circle-check"></i> Avisos de fechas importantes</li>
+                    <li><i class="fas fa-circle-check"></i> Material de última hora</li>
+                </ul>
+
+                <a href="https://chat.whatsapp.com/If3m9CuCqzF0B7eYFraUnC" class="wha-join-btn">
+                    <i class="fab fa-whatsapp wha-btn-icon"></i>
+                    <span class="wha-btn-label">Unirme ahora</span>
+                    <span class="wha-btn-arrow"><i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <!-- Imagen -->
+            <div class="wha-img-col reveal-right">
+                <div class="wha-img-wrap">
+                    <div class="wha-img-ring"></div>
+                    <div class="wha-img-frame">
+                        <img src="info5.png" alt="Únete al grupo de WhatsApp UAMEX">
+                    </div>
+                    <div class="wha-float-badge">
+                        <i class="fab fa-whatsapp"></i> Grupo activo
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         FOOTER
+    ══════════════════════════════════ -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80Z" />
+            </svg>
+        </div>
+        <div class="footer-body">
+            <div class="footer-brand">
+                <img src="uaemex.png" alt="UAMEX Logo">
+                <p>Vida Universitaria UAEMEX<br><span>Todos los recursos son gratuitos.</span></p>
+            </div>
+            <p class="footer-copy">© 2026 Vida Universitaria – UAEMEX</p>
+            <div class="footer-social">
+                <a href="https://chat.whatsapp.com/If3m9CuCqzF0B7eYFraUnC" title="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/share/g/1DVCnNQWp9/" title="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

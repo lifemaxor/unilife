@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guías UAEMEX — Unilife</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&family=Bangers&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="guias.css" />
+  <link rel="icon" href="logo.png" type="logo.png">
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="brand-logo-wrap">
+          <img src="uaemex.png" alt="Logo UAEMEX" class="brand-logo-img"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='grid'" />
+          <div class="brand-icon brand-icon-fallback" style="display:none"><i class="fas fa-graduation-cap"></i></div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-main">UAEMEX</span>
+          <span class="brand-sub">Recursos Académicos</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="uaemex.html"><i class="fas fa-house"></i><span>Inicio</span></a></li>
+        <li><a href="simulador1.html"><i class="fas fa-flask"></i><span>Simuladores</span></a></li>
+        <li><a href="#guias"><i class="fas fa-book-open"></i><span>Guías</span></a></li>
+        <li><a href="#whatsapp" class="nav-cta"><i class="fab fa-whatsapp"></i><span>Únete Gratis</span></a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="uaemex.html"><i class="fas fa-house"></i> Inicio</a>
+      <a href="simulador1.html"><i class="fas fa-flask"></i> Simuladores</a>
+      <a href="#guias"><i class="fas fa-book-open"></i> Guías</a>
+      <a href="#whatsapp" class="mob-cta"><i class="fab fa-whatsapp"></i> Únete Gratis</a>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <header class="hero" id="hero">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+    <div class="hero-grid-overlay"></div>
+
+    <div class="comic-badge cb-topleft" data-aos="zoom-in" data-aos-delay="200">
+      <span>¡100%</span><span>GRATIS!</span>
+    </div>
+    <div class="comic-badge cb-topright" data-aos="zoom-in" data-aos-delay="400">
+      <span>EXANI-II</span><span>READY</span>
+    </div>
+    <div class="comic-starburst cb-star1" data-aos="zoom-in" data-aos-delay="600"><span>NEW!</span></div>
+    <div class="comic-starburst cb-star2" data-aos="zoom-in" data-aos-delay="800"><span>FREE</span></div>
+
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="900">
+      <div class="hero-pill"><i class="fas fa-bolt"></i> Material oficial · Acceso inmediato</div>
+      <h1 class="hero-title">
+        <span class="ht-line1">Bienvenido a</span>
+        <span class="ht-line2">GUÍAS UAEMEX</span>
+        <span class="ht-line3">¡Sin Costo!</span>
+      </h1>
+      <p class="hero-desc">
+        Todo el material que necesitas para el <strong>EXANI-II</strong>.<br>
+        Ejercicios organizados por asignatura, <em>completamente gratuitos</em>.
+      </p>
+      <div class="hero-btns">
+        <a href="#guias" class="btn-primary"><i class="fas fa-rocket"></i> Ver Guías Ahora</a>
+        <a href="#whatsapp" class="btn-secondary"><i class="fab fa-whatsapp"></i> Unirme al Grupo</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="2">0</span>
+          <span class="stat-lbl">Áreas</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="6">0</span>
+          <span class="stat-lbl">Guías</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="0">0</span>
+          <span class="stat-lbl">Costo</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-ind">
+      <span>Explora</span>
+      <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+    </div>
+  </header>
+
+  <!-- ══ WAVE 1 ══ -->
+  <div class="wave-sep w1">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,60 C180,120 360,0 540,60 C720,120 900,0 1080,60 C1260,120 1380,30 1440,60 L1440,120 L0,120 Z"
+        fill="#f0faf0" />
+    </svg>
+  </div>
+
+  <!-- ══ FEATURES STRIP ══ -->
+  <section class="features-strip">
+    <div class="fs-container">
+      <div class="fs-item" data-aos="zoom-in" data-aos-delay="100">
+        <div class="fs-icon"><i class="fas fa-file-pdf"></i></div>
+        <div><strong>PDFs Descargables</strong><span>Llévate el material contigo</span></div>
+      </div>
+      <div class="fs-item" data-aos="zoom-in" data-aos-delay="200">
+        <div class="fs-icon"><i class="fas fa-tag"></i></div>
+        <div><strong>Sin Registro</strong><span>Acceso directo e inmediato</span></div>
+      </div>
+      <div class="fs-item" data-aos="zoom-in" data-aos-delay="300">
+        <div class="fs-icon"><i class="fas fa-infinity"></i></div>
+        <div><strong>Siempre Disponible</strong><span>24/7 sin interrupciones</span></div>
+      </div>
+      <div class="fs-item" data-aos="zoom-in" data-aos-delay="400">
+        <div class="fs-icon"><i class="fas fa-shield-halved"></i></div>
+        <div><strong>Contenido Oficial</strong><span>Alineado al EXANI-II</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WAVE 2 ══ -->
+  <div class="wave-sep w2">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,50 C240,100 480,0 720,50 C960,100 1200,10 1440,50 L1440,100 L0,100 Z" fill="#ffffff" />
+    </svg>
+  </div>
+
+  <!-- ══ GUÍAS ══ -->
+  <section class="guias-section" id="guias">
+    <div class="gs-header" data-aos="fade-up">
+      <div class="gs-pill"><i class="fas fa-layer-group"></i> Catálogo Completo</div>
+      <h2 class="gs-title">Elige tu <span>Área de Estudio</span></h2>
+      <p class="gs-sub">Selecciona un área y explora todas las guías disponibles.<br>Todo el material es <strong>100%
+          gratuito</strong> y listo para descargar.</p>
+      <div class="gs-comic-tag" data-aos="bounce" data-aos-delay="300"><i class="fas fa-star"></i> ¡Todo GRATIS! <i
+          class="fas fa-star"></i></div>
+    </div>
+
+    <div class="areas-grid" id="areasGrid">
+
+      <div class="area-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="ac-ribbon">Disponible</div>
+        <div class="ac-cover ac-bg-math">
+          <div class="ac-icon"><i class="fas fa-square-root-variable"></i></div>
+          <div class="ac-count-badge">3 Guías</div>
+        </div>
+        <div class="ac-body">
+          <div class="ac-tag">EXANI-II</div>
+          <h3 class="ac-title">Pensamiento Matemático</h3>
+          <p class="ac-desc">Álgebra, cálculo, geometría, estadística y todo lo relacionado con números.</p>
+          <div class="ac-meta"><span><i class="fas fa-download"></i> Gratis</span><span><i class="fas fa-star"></i>
+              4.9</span></div>
+          <button class="ac-btn" onclick="openCatalog('matematicas')"><i class="fas fa-eye"></i> Ver
+            Disponibles</button>
+        </div>
+      </div>
+
+      <div class="area-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="ac-ribbon ac-r-blue">Disponible</div>
+        <div class="ac-cover ac-bg-read">
+          <div class="ac-icon"><i class="fas fa-book-open-reader"></i></div>
+          <div class="ac-count-badge">3 Guías</div>
+        </div>
+        <div class="ac-body">
+          <div class="ac-tag ac-t-blue">EXANI-II</div>
+          <h3 class="ac-title">Comprensión Lectora</h3>
+          <p class="ac-desc">Textos analíticos, inferencias, argumentación y comprensión profunda.</p>
+          <div class="ac-meta"><span><i class="fas fa-download"></i> Gratis</span><span><i class="fas fa-star"></i>
+              4.8</span></div>
+          <button class="ac-btn ac-b-blue" onclick="openCatalog('lectora')"><i class="fas fa-eye"></i> Ver
+            Disponibles</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ MODAL CATÁLOGO ══ -->
+  <div class="catalog-modal" id="catalogModal">
+    <div class="cm-overlay" onclick="closeCatalog()"></div>
+    <div class="cm-panel">
+
+      <!-- Handle bar (drag visual) -->
+      <div class="cm-handle"></div>
+
+      <!-- Header con banner de color -->
+      <div class="cm-header-banner" id="cmBanner">
+        <div class="cm-banner-grid"></div>
+        <button class="cm-close" onclick="closeCatalog()" aria-label="Cerrar"><i class="fas fa-xmark"></i></button>
+        <div class="cm-header-content">
+          <div class="cm-icon-wrap">
+            <div class="cm-icon" id="cmIcon"><i class="fas fa-book"></i></div>
+            <div class="cm-icon-ring"></div>
+          </div>
+          <div class="cm-header-text">
+            <p class="cm-label"><i class="fas fa-layer-group"></i> Área de Estudio · EXANI-II</p>
+            <h3 class="cm-title" id="cmTitle">Área</h3>
+            <div class="cm-header-meta">
+              <span class="cm-count-pill" id="cmCount"><i class="fas fa-file-pdf"></i> — guías</span>
+              <span class="cm-free-tag"><i class="fas fa-star"></i> ¡100% GRATIS!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filtro / búsqueda -->
+      <div class="cm-toolbar">
+        <div class="cm-search-wrap">
+          <i class="fas fa-magnifying-glass"></i>
+          <input type="text" class="cm-search" id="cmSearch" placeholder="Buscar guía…"
+            oninput="filterGuides(this.value)" />
+          <button class="cm-search-clear" id="cmSearchClear" onclick="clearSearch()" style="display:none"><i
+              class="fas fa-xmark"></i></button>
+        </div>
+        <div class="cm-sort-wrap">
+          <span class="cm-sort-label"><i class="fas fa-sliders"></i></span>
+          <button class="cm-sort-btn active" onclick="sortGuides('default',this)" data-sort="default">Todos</button>
+          <button class="cm-sort-btn" onclick="sortGuides('basico',this)" data-sort="basico">Básico</button>
+          <button class="cm-sort-btn" onclick="sortGuides('intermedio',this)" data-sort="intermedio">Intermedio</button>
+          <button class="cm-sort-btn" onclick="sortGuides('avanzado',this)" data-sort="avanzado">Avanzado</button>
+        </div>
+      </div>
+
+      <!-- Grid de guías -->
+      <div class="cm-grid" id="cmGrid"></div>
+
+      <!-- Footer sticky -->
+      <div class="cm-footer">
+        <div class="cm-footer-info">
+          <i class="fas fa-circle-info"></i>
+          Todo el material es gratuito. Los PDFs se descargan directamente desde el servidor.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ WAVE 3 ══ -->
+  <div class="wave-sep w3">
+    <svg viewBox="0 0 1440 110" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,30 C360,110 720,0 1080,70 C1260,110 1380,20 1440,50 L1440,110 L0,110 Z" fill="#0a3d1f" />
+    </svg>
+  </div>
+
+  <!-- ══ WHATSAPP ══ -->
+  <section class="wha-section" id="whatsapp">
+    <div class="wha-bg">
+      <div class="wha-blob wha-blob-1"></div>
+      <div class="wha-blob wha-blob-2"></div>
+    </div>
+
+    <div class="wha-inner">
+      <div class="wha-text" data-aos="fade-right" data-aos-duration="800">
+        <div class="wha-comic-wrap">
+          <div class="comic-balloon">
+            <span>¡ES</span>
+            <span>GRATIS!</span>
+          </div>
+          <div class="balloon-tail"></div>
+        </div>
+        <div class="wha-pill"><i class="fab fa-whatsapp"></i> Comunidad Estudiantil</div>
+        <h2 class="wha-title">Únete a nuestra<br><span class="wha-accent">comunidad gratuita</span></h2>
+        <div class="wha-card-text">
+          <p>Miles de estudiantes preparándose juntos para el EXANI-II. Resuelve dudas, comparte recursos y llega
+            acompañado al examen. <strong>Sin costo, sin condiciones, sin registro.</strong></p>
+        </div>
+        <ul class="wha-benefits">
+          <li data-aos="fade-right" data-aos-delay="100"><i class="fas fa-circle-check"></i> Respuestas en minutos</li>
+          <li data-aos="fade-right" data-aos-delay="200"><i class="fas fa-circle-check"></i> Simuladores exclusivos del
+            grupo</li>
+          <li data-aos="fade-right" data-aos-delay="300"><i class="fas fa-circle-check"></i> Avisos de fechas
+            importantes</li>
+          <li data-aos="fade-right" data-aos-delay="400"><i class="fas fa-circle-check"></i> Material de última hora
+          </li>
+          <li data-aos="fade-right" data-aos-delay="500"><i class="fas fa-circle-check"></i> Compañeros que ya pasaron
+            el examen</li>
+        </ul>
+        <a href="https://chat.whatsapp.com/If3m9CuCqzF0B7eYFraUnC" class="wha-join-btn" data-aos="zoom-in"
+          data-aos-delay="300">
+          <i class="fab fa-whatsapp"></i>
+          <span>Unirme al Grupo Ahora</span>
+          <i class="fas fa-arrow-right wha-arrow"></i>
+        </a>
+      </div>
+
+      <div class="wha-visual" data-aos="fade-left" data-aos-duration="800">
+        <div class="wha-phone-mock">
+          <div class="wha-phone-screen">
+            <div class="wha-chat-header">
+              <div class="wha-avatar"><i class="fab fa-whatsapp"></i></div>
+              <div class="wha-chat-info">
+                <strong>UAEMEX Guías 📚</strong>
+                <span>1,240 miembros · activo ahora</span>
+              </div>
+            </div>
+            <div class="wha-messages">
+              <div class="wha-msg wha-msg-in"><span>Necesito Ejercicios para Calculo 🎉</span></div>
+              <div class="wha-msg wha-msg-in"><span>¿y que costo tienen para personalizar?</span></div>
+              <div class="wha-msg wha-msg-out"><span>Tranquilo todo es gratis</span></div>
+              <div class="wha-msg wha-msg-in"><span>De verdad? muchas gracias 👆</span></div>
+              <div class="wha-msg wha-msg-in"><span>Recomendare este sitio✅</span></div>
+            </div>
+            <div class="wha-input-bar">
+              <div class="wha-fake-input">Escribe un mensaje…</div>
+              <div class="wha-send-btn"><i class="fas fa-paper-plane"></i></div>
+            </div>
+          </div>
+          <div class="wha-float-badge"><i class="fas fa-users"></i> Grupo Activo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WAVE 4 ══ -->
+  <div class="wave-sep w4">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,50 C200,0 400,100 600,40 C800,-20 1000,90 1200,50 C1320,25 1390,60 1440,50 L1440,100 L0,100 Z"
+        fill="#101820" />
+    </svg>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer-blobs">
+      <div class="fb-1"></div>
+      <div class="fb-2"></div>
+    </div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="fb-logo"><i class="fas fa-graduation-cap"></i><span>UAEMEX</span></div>
+        <p class="fb-desc">Material académico gratuito para estudiantes del EXANI-II. Sin costos, sin registro, sin
+          límites.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/share/g/1DVCnNQWp9/" class="fs-link fs-fb" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i><span>Facebook</span>
+          </a>
+          <a href="https://chat.whatsapp.com/If3m9CuCqzF0B7eYFraUnC" class="fs-link fs-wa" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4><i class="fas fa-compass"></i> Navegación</h4>
+        <ul>
+          <li><a href="uaemex.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Simuladores</a></li>
+          <li><a href="#guias"><i class="fas fa-chevron-right"></i> Guías</a></li>
+          <li><a href="#whatsapp"><i class="fas fa-chevron-right"></i> Comunidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4><i class="fas fa-layer-group"></i> Áreas</h4>
+        <ul>
+          <li><a href="#guias"><i class="fas fa-chevron-right"></i> Pensamiento Matemático</a></li>
+          <li><a href="#guias"><i class="fas fa-chevron-right"></i> Comprensión Lectora</a></li>
+          <li><a href="#guias"><i class="fas fa-chevron-right"></i> Cálculo Diferencial</a></li>
+          <li><a href="#guias"><i class="fas fa-chevron-right"></i> Física · Historia · Derecho</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <h4><i class="fas fa-circle-info"></i> Info</h4>
+        <div class="fi-badge"><i class="fas fa-tag"></i> Todo el material es <strong>100% gratuito</strong></div>
+        <div class="fi-badge"><i class="fas fa-shield-halved"></i> Sin registro requerido</div>
+        <div class="fi-badge"><i class="fas fa-clock"></i> Disponible 24/7</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 <strong>UAEMEX Recursos Académicos</strong> · Hecho con <i class="fas fa-heart"></i> para estudiantes
+      </p>
+      <p class="fb-free-tag"><i class="fas fa-infinity"></i> Siempre Gratis</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="guias.js"></script>
+</body>
+
+</html>
